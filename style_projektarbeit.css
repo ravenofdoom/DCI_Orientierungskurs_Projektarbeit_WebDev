@@ -1,0 +1,353 @@
+/* Body Style */
+
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url("./img/cryptocurrency_background_2.jpg");
+  background-attachment: fixed;
+  color: aliceblue;
+  font-family: cvierundsechzig_Pro_Mono-STYLE;
+  font-size: 12px;
+}
+
+/* Style eigene Schriftart */
+
+@font-face {
+  font-family: cvierundsechzig_Pro_Mono-STYLE;
+  src: url(./font/cvierundsechzig_Pro_Mono-STYLE.woff2);
+}
+
+/* Styling Links / Überschriften Shorthand */
+
+a,
+a:visited,
+h2,
+h3 {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  margin: 30px;
+}
+
+h1 {
+  border: 3px solid black;
+  padding: 10px;
+  background-image: url(./img/GIF_Hintergrund_NFT.gif);
+  font-size: 35px;
+}
+
+/* Styling Header */
+
+header {
+  display: flex;
+  background-image: url(./img/wallstreetmeme_background_header_2.jpg);
+  justify-content: space-between;
+  border-bottom: 3px solid black;
+  align-items: center;
+  position: sticky;
+  z-index: 999;
+  top: 0;
+}
+
+header img {
+  width: 100px;
+  border: 2px solid black;
+}
+
+header ul {
+  display: flex;
+  background-color: rgb(102, 102, 248);
+  font-weight: bold;
+  border: 4px solid black;
+  padding: 10px;
+  cursor: pointer;
+}
+
+header ul li {
+  display: flex;
+  border: 2px solid black;
+  padding: 5px;
+  color: aliceblue;
+}
+
+header ul li:hover {
+  background-color: blue;
+  color: black;
+  transform: scale(1.2);
+}
+
+/* Style Menu header  */
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: rgb(102, 102, 248);
+  border: 1px solid black;
+}
+
+.menu li a {
+  display: block;
+  color: #000;
+  font-weight: bold;
+  padding: 8px 16px;
+}
+
+/* Styling unter Header */
+
+.unter_header {
+  width: 1500px;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+}
+
+.socials {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.socials img {
+  box-shadow: blue 0px 5px 15px;
+  transition: transform 1s;
+  border-radius: 50%;
+}
+
+.socials img:hover {
+  transform: scale(1.3);
+}
+
+.wallet_connect {
+  display: flex;
+  justify-content: center;
+}
+
+.unter_header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  border-bottom: 2px solid black;
+  background-color: rgb(145, 145, 241);
+}
+
+.unter_header img {
+  width: 40px;
+}
+
+/* Styling Container Eins */
+
+.container_element_eins {
+  display: flex;
+  border: 6px solid black;
+  margin: 15px;
+  padding: 15px;
+  background-color: rgb(102, 102, 248);
+  gap: 15px;
+}
+
+.container_element_eins img {
+  width: 60px;
+  padding: 20px;
+  box-shadow: blue 0px 5px 15px;
+  transition: transform 1s;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+.container_element_eins img:hover {
+  transform: scale(1.3);
+}
+
+.container_element_eins p {
+  padding: 20px;
+}
+
+.altcoins,
+.memecoins,
+.stablecoins {
+  border: 1px solid black;
+}
+
+.stablecoins,
+.altcoins,
+.memecoins {
+  width: 3500px;
+}
+
+/* Styling Container Zwei */
+
+.container_element_zwei {
+  display: flex;
+  border: 6px solid black;
+  margin: 15px;
+  padding: 15px;
+  background-color: rgb(102, 102, 248);
+  gap: 15px;
+
+  /* Tooltip */
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border: 3px solid black;
+    padding: 5px;
+    margin-left: 5px;
+  }
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+  }
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+}
+
+.container_element_zwei p {
+  text-align: center;
+}
+
+.container_element_zwei img {
+  padding: 20px;
+}
+
+.satoshi,
+.elon,
+.vitalik {
+  border: 1px solid black;
+}
+
+.satoshi img {
+  width: 250px;
+}
+
+.vitalik img {
+  width: 350px;
+}
+.elon img {
+  width: 380px;
+}
+/* Change the link color Menu */
+
+.menu li a:hover {
+  background-color: #555;
+
+  color: white;
+}
+
+/* Styling Container Drei inklsuive Slideshow*/
+
+.container_element_drei {
+  display: flex;
+  border: 6px solid black;
+  background-image: url("./img/GIF_Hintergrund_NFT.gif");
+  gap: 30px;
+  margin: 15px;
+  padding: 15px;
+}
+
+.showSlide {
+  display: none;
+}
+
+.showSlide img {
+  width: 100%;
+}
+
+.slidercontainer {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.left,
+.right {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 15px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bolder;
+  font-size: 22px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  background-color: rgb(123, 123, 243);
+}
+
+.right {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.left:hover,
+.right:hover {
+  background-color: rgb(3, 3, 198);
+}
+
+.content {
+  color: rgb(6, 6, 242);
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.container_element_drei img {
+  width: 500px;
+  height: 300px;
+  padding: 5px;
+}
+
+/* Java Script file für Slideshow / Fading */
+
+/* Styling Container Vier */
+
+.container_element_vier {
+  display: flex;
+  border: 6px solid black;
+  margin: 15px;
+  padding: 15px;
+}
+
+.videos {
+  display: flex;
+  gap: 30px;
+}
+
+/* Styling Footer */
+
+.footer_unten {
+  display: flex;
+  margin: 15px;
+  background-color: rgb(145, 145, 241);
+  padding: 5px;
+  justify-content: space-between;
+  border: 4px solid black;
+}
